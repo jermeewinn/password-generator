@@ -1,2 +1,1 @@
-# Password Generator
-Password Generator Project for UC-Berkeley
+# Password Generator Starter Code
