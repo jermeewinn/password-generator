@@ -1,5 +1,4 @@
 // Assignment code here
-//var generateBtn = document.querySelector("#generate");
 
 var pwLowercase = "abcdefghijklmnopqrstuvwxyz"
 var pwUppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -10,25 +9,25 @@ var genPassword = ""
 var generatePassword = function() {
   var pwLength = window.prompt("How many characters long would you like your password to be? (Min: 8, Max 128");
     while (8 > pwLength || pwLength > 128) {
-     window.alert("Please choose a number between 8 and 128.")
+     pwLength = window.prompt("Please choose a number between 8 and 128.")
   }
 
-userInput = window.prompt("Would you like to include lower-case letters in your password? (1 for Yes, 0 for No)");
+  userInput = window.prompt("Would you like to include lower-case letters in your password? (1 for Yes, 0 for No)");
   if (userInput == 1){
     genPassword += pwLowercase
   }
 
-userInput = window.prompt("Would you like to include UPPER-CASE letters in your password? (1 for Yes, 0 for No)");
+  userInput = window.prompt("Would you like to include UPPER-CASE letters in your password? (1 for Yes, 0 for No)");
   if (userInput == 1) {
     genPassword += pwUppercase
   }
 
-userInput = window.prompt("Would you like to include numbers in your password? (1 for Yes, 0 for No)");
+  userInput = window.prompt("Would you like to include numbers in your password? (1 for Yes, 0 for No)");
   if (userInput == 1) {
     genPassword += pwNumbers
   }
 
-userInput = window.prompt("Would you like to include special characters (!,@,#,$,%,etc.) in your password? (1 for Yes, = for No)");
+  userInput = window.prompt("Would you like to include special characters (!,@,#,$,%,etc.) in your password? (1 for Yes, = for No)");
   if (userInput == 1) {
     genPassword += pwSpecials
   } return pwLength;
