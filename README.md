@@ -1,7 +1,7 @@
 # Password Generator
 
 ## Purpose
-Build a password generator using JavaScript.
+Build a password generator using JavaScript. This app utilizes window prompts to collect user feedback on what types characters and password character length the user would like to generate a password for use with their online accounts.
 
 ## Technologies Used
 * HTML
